@@ -1,0 +1,9 @@
+{
+  "nodeIntegrationInWorker": false,
+  "nodeIntegration": false,
+  "sandbox": true,
+  "webSecurity": true,
+  "allowRunningInsecureContent": false,
+  "experimentalFeatures": false,
+  "preload": "path.join(app.getAppPath(), 'preload.js')"
+}
