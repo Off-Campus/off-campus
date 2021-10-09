@@ -85,6 +85,7 @@ app.get("/logout", (req, res) => {
 });
 
 
+// Start app listener
 app.listen(process.env.PORT, () => {
     console.log('');
     console.log(`🚀 Listening on port ${process.env.PORT}...`);
