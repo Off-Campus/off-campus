@@ -10,8 +10,7 @@ const localStrategy = require('passport-local').Strategy;
 const app = express();
 
 // Import internal files
-const User = require('./Models/User');
-const { listenerCount } = require('process');
+const User = require('./Public/Components/Models/User');
 
 // Point to Environment Variables
 dotenv.config({ path: './config/config.env' });
