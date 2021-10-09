@@ -2,7 +2,6 @@
   "name": "off-campus",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "dependencies": {
     "abab": "^2.0.5",
     "accepts": "^1.3.7",
@@ -257,7 +256,7 @@
     "ecc-jsbn": "^0.1.2",
     "ee-first": "^1.1.1",
     "ejs": "^2.7.4",
-    "electron": "^15.1.1",
+    "electron": "^15.1.2",
     "electron-to-chromium": "^1.3.671",
     "elliptic": "^6.5.4",
     "emittery": "^0.7.2",
@@ -1105,8 +1104,13 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "run-electron": "concurrently \"cross-env BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\""
   },
+  "main": "electron.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lionellewis915/off-campus.git"
