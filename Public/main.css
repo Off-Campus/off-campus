@@ -2,6 +2,7 @@
 @import "./Components/css/bookcard.css";
 @import "./Components/css/navbar.css";
 @import "./Components/css/colors.css";
+@import "./Components/css/home.css";
 
 /* Universal styles */
 * {
