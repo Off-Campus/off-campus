@@ -626,6 +626,7 @@
     "node-modules-regexp": "^1.0.0",
     "node-notifier": "^8.0.1",
     "node-releases": "^1.1.70",
+    "nodemon": "^2.0.13",
     "normalize-package-data": "^2.5.0",
     "normalize-path": "^3.0.0",
     "normalize-range": "^0.1.2",
@@ -1102,15 +1103,7 @@
     "yauzl": "^2.10.0",
     "yocto-queue": "^0.1.0"
   },
-  "devDependencies": {
-    "@types/express": "^4.17.13",
-    "@types/express-handlebars": "^5.3.1",
-    "@types/express-session": "^1.17.4",
-    "@types/mongoose": "^5.11.97",
-    "@types/nodemon": "^1.19.1",
-    "@types/passport": "^1.0.7",
-    "@types/passport-local": "^1.0.34"
-  },
+  "devDependencies": {},
   "scripts": {
     "start": "nodemon app.js"
   },
