@@ -15,13 +15,17 @@ const User = require('./Public/Components/Models/User');
 // Point to Environment Variables
 dotenv.config({ path: './config/config.env' });
 
-// Connect to database
-mongoose.connect(process.env.MONGO_URL, {});
+// Connect to databases
+mongoose.connect(process.env.USER_MONGO_URL, {
+    useNewUrlParser: true
+}, () => {
+    console.log('🚀 Successfully connected to USERS database...');
+});
 
 // Middleware
 app.engine('hbs', hbs({ extname: '.hbs' }));
 app.set('view engine', 'hbs');
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/Public'));
 
 app.use(session({
     secret: process.env.SECRET_KEY,
@@ -73,6 +77,15 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get("/logout", (req, res) => {
+  res.render("logout", {
+    title: "Logout",
+    username: req.body.username,
+  });
+});
+
+
 app.listen(process.env.PORT, () => {
-    console.log(`🚀 Listening on port ${process.env.PORT}`);
+    console.log('');
+    console.log(`🚀 Listening on port ${process.env.PORT}...`);
 });
