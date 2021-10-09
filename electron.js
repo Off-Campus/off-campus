@@ -7,14 +7,11 @@ function createWindow () {
   const mainWindow = new BrowserWindow({
     width: 1280,
     height: 800,
-    webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
-    }
+    webPreferences: './config/webPreferences.json'
   })
 
   // and load the index.html of the app.
   mainWindow.loadURL('http://localhost:3000')
-}
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
@@ -34,4 +31,4 @@ app.whenReady().then(() => {
 // explicitly with Cmd + Q.
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') app.quit()
-});
+})
