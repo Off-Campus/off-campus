@@ -1,23 +1,10 @@
 /* colors.css */
-
-.purple-mountain-majestic {
-  color: #8d80ad;
-}
-.dark-purple {
-  color: #2e283e;
-}
-.celeste {
-  color: #9dfff9;
-}
-.rich-black {
-  color: #002926;
-}
-.spring-green {
-  color: #64f58d;
-}
-.dark-green {
-  color: #02260d;
-}
-.login-background {
-  background-color: #D6D6D6;
+:root{
+  --purple-mountain-majestic: #8d80ad;
+  --dark-purple: #2e283e;
+  --celeste: #9dfff9;
+  --rich-black: #002926;
+  --spring-green: #64f58d;
+  --dark-green: #02260d;
+  --login-background: #d6d6d6;
 }
