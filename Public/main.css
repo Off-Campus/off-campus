@@ -2,7 +2,7 @@
 @import "./Components/css/bookcard.css";
 @import "./Components/css/navbar.css";
 @import "./Components/css/colors.css";
-@import "./Components/css/home.css";
+@import "./Components/css/fonts.css";
 
 /* Universal styles */
 * {
@@ -11,4 +11,181 @@
   box-sizing: border-box;
 
   font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  background-color: var(--login-background);
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.home {
+  max-width: 400px;
+  width: 100%;
+  padding: 50px 30px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.home a {
+  text-align: center;
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--purple-mountain-majestic);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: 0.4s;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+form {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 50px 30px;
+  background-color: #fff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+}
+
+form h1 {
+  color: var(--purple-mountain-majestic);
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.err-msg {
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  color: red;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+form .form-group {
+  margin-bottom: 30px;
+}
+
+form label {
+  display: block;
+  color: var(--purple-mountain-majestic);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+form input {
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+form input:not([type="submit"]) {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: 0.4s;
+  color: #222;
+  font-size: 18px;
+}
+
+form input:not([type="submit"])::placeholder {
+  color: #7c7c7c;
+}
+
+form input:not([type="submit"]):focus,
+form input:not([type="submit"]):valid {
+  background-color: #fff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+form input[type="email"]:invalid {
+  border: 3px solid red;
+}
+
+form input[type="email"]:valid {
+  border: 3px solid green;
+}
+
+form input[type="text"]:invalid {
+  border: 3px solid red;
+}
+
+form input[type="text"]:valid {
+  border: 3px solid green;
+}
+
+form input[type="password"]:invalid {
+  border: 3px solid red;
+}
+
+form input[type="password"]:valid {
+  border: 3px solid green;
+}
+
+form input[type="submit"] {
+  display: inline-block;
+  width: 150px;
+  height: 60px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--purple-mountain-majestic);
+  transition: 0.4s;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #fff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+  color: var(--purple-mountain-majestic);
+  border: 3px dashed var(--purple-mountain-majestic);
+}
+
+h6 {
+  color: #7c7c7c;
+  text-align: center;
+  padding: 7px;
+  font-size: 16px;
+}
+
+form a {
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  height: 60px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 3px dashed var(--purple-mountain-majestic);
+  background-color: #fff;
+
+  transition: 0.4s;
+  color: var(--purple-mountain-majestic);
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+form a:hover {
+  background-color: var(--purple-mountain-majestic);
+  color: #fff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
 }
